@@ -60,12 +60,14 @@
             this.grupa1ToolStripMenuItem.Name = "grupa1ToolStripMenuItem";
             this.grupa1ToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
             this.grupa1ToolStripMenuItem.Text = "Grupa 1";
+            this.grupa1ToolStripMenuItem.Click += new System.EventHandler(this.grupa1ToolStripMenuItem_Click);
             // 
             // grupa2ToolStripMenuItem
             // 
             this.grupa2ToolStripMenuItem.Name = "grupa2ToolStripMenuItem";
             this.grupa2ToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
             this.grupa2ToolStripMenuItem.Text = "Grupa 2";
+            this.grupa2ToolStripMenuItem.Click += new System.EventHandler(this.grupa2ToolStripMenuItem_Click);
             // 
             // MainForm
             // 

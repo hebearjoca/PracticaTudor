@@ -16,6 +16,16 @@ namespace WindowsFormsApp1
             InitializeComponent();
         }
 
-        
+        private void grupa1ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Machete.Grupa1 machetaGrupa1 = new Machete.Grupa1();
+            machetaGrupa1.ShowDialog();
+        }
+
+        private void grupa2ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Machete.Grupa2 machetaGrupa2 = new Machete.Grupa2();
+            machetaGrupa2.ShowDialog();
+        }
     }
 }

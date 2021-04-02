@@ -44,6 +44,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Machete\Grupa1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Machete\Grupa1.Designer.cs">
+      <DependentUpon>Grupa1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Machete\Grupa2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Machete\Grupa2.Designer.cs">
+      <DependentUpon>Grupa2.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -52,6 +64,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Machete\Grupa1.resx">
+      <DependentUpon>Grupa1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Machete\Grupa2.resx">
+      <DependentUpon>Grupa2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
