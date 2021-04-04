@@ -28,68 +28,52 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.grupa1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.grupa2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuStrip1.SuspendLayout();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // menuStrip1
+            // button1
             // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem1,
-            this.grupa1ToolStripMenuItem,
-            this.grupa2ToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
-            this.menuStrip1.TabIndex = 0;
-            this.menuStrip1.Text = "menuStrip1";
+            this.button1.Location = new System.Drawing.Point(45, 0);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(332, 23);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "Deschidere macheta modala (FARA PARINTE)";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // toolStripMenuItem1
+            // button2
             // 
-            this.toolStripMenuItem1.Enabled = false;
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(125, 20);
-            this.toolStripMenuItem1.Text = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Visible = false;
-            // 
-            // grupa1ToolStripMenuItem
-            // 
-            this.grupa1ToolStripMenuItem.Name = "grupa1ToolStripMenuItem";
-            this.grupa1ToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
-            this.grupa1ToolStripMenuItem.Text = "Grupa 1";
-            this.grupa1ToolStripMenuItem.Click += new System.EventHandler(this.grupa1ToolStripMenuItem_Click);
-            // 
-            // grupa2ToolStripMenuItem
-            // 
-            this.grupa2ToolStripMenuItem.Name = "grupa2ToolStripMenuItem";
-            this.grupa2ToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
-            this.grupa2ToolStripMenuItem.Text = "Grupa 2";
-            this.grupa2ToolStripMenuItem.Click += new System.EventHandler(this.grupa2ToolStripMenuItem_Click);
+            this.button2.Location = new System.Drawing.Point(383, 0);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(313, 23);
+            this.button2.TabIndex = 3;
+            this.button2.Text = "Deschidere macheta 2 care are ca parinte macheta curenta";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.menuStrip1);
+            this.BackColor = System.Drawing.Color.PaleGreen;
+            this.ClientSize = new System.Drawing.Size(806, 401);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
+            this.HelpButton = true;
+            this.IsMdiContainer = true;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "MainForm";
-            this.Text = "Form1";
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
+            this.Text = "TemaWinForm1";
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem grupa1ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem grupa2ToolStripMenuItem;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }
 

@@ -59,6 +59,7 @@
             this.Controls.Add(this.label2);
             this.Name = "Grupa2";
             this.Text = "Grupa2";
+            this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
             this.ResumeLayout(false);
             this.PerformLayout();
 

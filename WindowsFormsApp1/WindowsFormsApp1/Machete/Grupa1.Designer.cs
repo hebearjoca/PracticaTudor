@@ -40,6 +40,7 @@
             this.label1.Size = new System.Drawing.Size(66, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "test  grupa 1";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // comboBox1
             // 
@@ -58,6 +59,12 @@
             this.Controls.Add(this.label1);
             this.Name = "Grupa1";
             this.Text = "Grupa1";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Activated += new System.EventHandler(this.Grupa1_Activated);
+            this.Deactivate += new System.EventHandler(this.Grupa1_Deactivate);
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Grupa1_FormClosing);
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Grupa1_FormClosed);
+            this.Load += new System.EventHandler(this.Grupa1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
