@@ -14,36 +14,63 @@ namespace WindowsFormsApp1.Machete
         public Grupa1()
         {
             InitializeComponent();
+            DataTable tabel1 = new DataTable();
+            tabel1.Columns.Add("tip");
+            tabel1.Columns.Add("denumire");
+            tabel1.Columns.Add("valoare");
+            DataRow rand1 = tabel1.NewRow();
+            rand1["tip"] = "Spor";
+            rand1["denumire"] = "spor de vechime";
+            rand1["valoare"] = "500";
+            DataRow rand2 = tabel1.NewRow();
+            rand2["tip"] = "Spor";
+            rand2["denumire"] = "spor de vechime";
+            rand2["valoare"] = "500";
+            treeList1.DataSource = tabel1;
         }
 
-        private void Grupa1_Load(object sender, EventArgs e)
+        private void Grupa1_KeyPress(object sender, KeyPressEventArgs e)
         {
-            MessageBox.Show("Macheta se incarca");
+            switch (Char.ToUpper(e.KeyChar))
+            {
+                case 'C':
+                    this.BackColor = Color.Aqua;
+                    break;
+
+                case 'A':
+                    this.BackColor = Color.Coral;
+                    break;
+
+                case 'D':
+                    this.BackColor = Color.Cyan;
+                    break;
+
+                default:
+                    this.BackColor = Color.OrangeRed;
+                    break;
+            }
         }
 
-        private void Grupa1_FormClosing(object sender, FormClosingEventArgs e)
+        private void Grupa1_KeyDown(object sender, KeyEventArgs e)
         {
-            MessageBox.Show("Macheta se inchide");
-        }
+            switch (e.KeyData)
+            {
+                case Keys.A:
+                    this.BackColor = Color.Aqua;
+                    break;
 
-        private void Grupa1_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            MessageBox.Show("Macheta s-a inchis");
-        }
+                case Keys.C:
+                    this.BackColor = Color.Coral;
+                    break;
 
-        private void Grupa1_Activated(object sender, EventArgs e)
-        {
-            MessageBox.Show("Macheta se activeaza");
-        }
+                case Keys.D:
+                    this.BackColor = Color.Cyan;
+                    break;
 
-        private void Grupa1_Deactivate(object sender, EventArgs e)
-        {
-            MessageBox.Show("Macheta se dezactiveaza");
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
+                default:
+                    this.BackColor = Color.OrangeRed;
+                    break;
+            }
         }
     }
 }
