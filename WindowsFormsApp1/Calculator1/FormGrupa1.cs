@@ -8,11 +8,11 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace Calculator
+namespace Calculator1
 {
-    public partial class Form1 : Form
+    public partial class FormGrupa1 : Form
     {
-        public Form1()
+        public FormGrupa1()
         {
             InitializeComponent();
         }
