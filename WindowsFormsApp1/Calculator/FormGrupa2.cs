@@ -20,54 +20,71 @@ namespace Calculator
         Double rezultat = 0;
         string operatie;
          
+        private void eliminareZero()
+        {
+            double numar;
+            numar = double.Parse(textBoxAfisare.Text);
+            textBoxAfisare.Text = numar.ToString();
+        }
+
         private void buttonZero_Click(object sender, EventArgs e)
         {
             textBoxAfisare.Text += "0";
+            eliminareZero();
         }
 
         private void buttonUnu_Click(object sender, EventArgs e)
         {
             textBoxAfisare.Text += "1";
+            eliminareZero();
         }
 
         private void buttonDoi_Click(object sender, EventArgs e)
         {
             textBoxAfisare.Text += "2";
+            eliminareZero();
         }
 
         private void buttonTrei_Click(object sender, EventArgs e)
         {
             textBoxAfisare.Text += "3";
+            eliminareZero();
         }
 
         private void buttonPatru_Click(object sender, EventArgs e)
         {
             textBoxAfisare.Text += "4";
+            eliminareZero();
         }
 
         private void buttonCinci_Click(object sender, EventArgs e)
         {
             textBoxAfisare.Text += "5";
+            eliminareZero();
         }
 
         private void buttonSase_Click(object sender, EventArgs e)
         {
             textBoxAfisare.Text += "6";
+            eliminareZero();
         }
 
         private void buttonSapte_Click(object sender, EventArgs e)
         {
             textBoxAfisare.Text += "7";
+            eliminareZero();
         }
 
         private void buttonOpt_Click(object sender, EventArgs e)
         {
             textBoxAfisare.Text += "8";
+            eliminareZero();
         }
 
         private void buttonNoua_Click(object sender, EventArgs e)
         {
             textBoxAfisare.Text += "9";
+            eliminareZero();
         }
 
         private void buttonStergeTot_Click(object sender, EventArgs e)
