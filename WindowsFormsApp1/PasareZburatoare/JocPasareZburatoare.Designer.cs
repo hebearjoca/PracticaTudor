@@ -40,6 +40,8 @@
             this.canalSus2 = new System.Windows.Forms.PictureBox();
             this.Coin = new System.Windows.Forms.PictureBox();
             this.Coin2 = new System.Windows.Forms.PictureBox();
+            this.Bomb = new System.Windows.Forms.PictureBox();
+            this.Pizza = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pasare)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.canalJos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pamant)).BeginInit();
@@ -48,6 +50,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.canalSus2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Coin)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Coin2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Bomb)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Pizza)).BeginInit();
             this.SuspendLayout();
             // 
             // pasare
@@ -64,10 +68,10 @@
             // canalJos
             // 
             this.canalJos.Image = ((System.Drawing.Image)(resources.GetObject("canalJos.Image")));
-            this.canalJos.Location = new System.Drawing.Point(683, 354);
+            this.canalJos.Location = new System.Drawing.Point(683, 361);
             this.canalJos.Margin = new System.Windows.Forms.Padding(0);
             this.canalJos.Name = "canalJos";
-            this.canalJos.Size = new System.Drawing.Size(91, 212);
+            this.canalJos.Size = new System.Drawing.Size(91, 214);
             this.canalJos.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.canalJos.TabIndex = 1;
             this.canalJos.TabStop = false;
@@ -77,10 +81,10 @@
             this.pamant.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pamant.Image = ((System.Drawing.Image)(resources.GetObject("pamant.Image")));
-            this.pamant.Location = new System.Drawing.Point(0, 570);
-            this.pamant.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pamant.Location = new System.Drawing.Point(-1, 569);
+            this.pamant.Margin = new System.Windows.Forms.Padding(4, 0, 4, 4);
             this.pamant.Name = "pamant";
-            this.pamant.Size = new System.Drawing.Size(1730, 105);
+            this.pamant.Size = new System.Drawing.Size(1925, 105);
             this.pamant.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pamant.TabIndex = 2;
             this.pamant.TabStop = false;
@@ -91,7 +95,7 @@
             this.canalSus.Location = new System.Drawing.Point(827, 0);
             this.canalSus.Margin = new System.Windows.Forms.Padding(0);
             this.canalSus.Name = "canalSus";
-            this.canalSus.Size = new System.Drawing.Size(84, 220);
+            this.canalSus.Size = new System.Drawing.Size(91, 220);
             this.canalSus.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.canalSus.TabIndex = 3;
             this.canalSus.TabStop = false;
@@ -115,10 +119,10 @@
             // canalJos2
             // 
             this.canalJos2.Image = ((System.Drawing.Image)(resources.GetObject("canalJos2.Image")));
-            this.canalJos2.Location = new System.Drawing.Point(1062, 354);
+            this.canalJos2.Location = new System.Drawing.Point(1076, 361);
             this.canalJos2.Margin = new System.Windows.Forms.Padding(0);
             this.canalJos2.Name = "canalJos2";
-            this.canalJos2.Size = new System.Drawing.Size(91, 212);
+            this.canalJos2.Size = new System.Drawing.Size(91, 208);
             this.canalJos2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.canalJos2.TabIndex = 5;
             this.canalJos2.TabStop = false;
@@ -127,10 +131,10 @@
             // canalSus2
             // 
             this.canalSus2.Image = ((System.Drawing.Image)(resources.GetObject("canalSus2.Image")));
-            this.canalSus2.Location = new System.Drawing.Point(1520, 0);
+            this.canalSus2.Location = new System.Drawing.Point(1513, 0);
             this.canalSus2.Margin = new System.Windows.Forms.Padding(0);
             this.canalSus2.Name = "canalSus2";
-            this.canalSus2.Size = new System.Drawing.Size(84, 220);
+            this.canalSus2.Size = new System.Drawing.Size(91, 220);
             this.canalSus2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.canalSus2.TabIndex = 7;
             this.canalSus2.TabStop = false;
@@ -140,10 +144,10 @@
             this.Coin.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Coin.BackgroundImage")));
             this.Coin.Cursor = System.Windows.Forms.Cursors.Default;
             this.Coin.Image = ((System.Drawing.Image)(resources.GetObject("Coin.Image")));
-            this.Coin.Location = new System.Drawing.Point(1147, 106);
+            this.Coin.Location = new System.Drawing.Point(1158, 106);
             this.Coin.Margin = new System.Windows.Forms.Padding(0);
             this.Coin.Name = "Coin";
-            this.Coin.Size = new System.Drawing.Size(86, 81);
+            this.Coin.Size = new System.Drawing.Size(75, 75);
             this.Coin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Coin.TabIndex = 8;
             this.Coin.TabStop = false;
@@ -153,20 +157,46 @@
             this.Coin2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Coin2.BackgroundImage")));
             this.Coin2.Cursor = System.Windows.Forms.Cursors.Default;
             this.Coin2.Image = ((System.Drawing.Image)(resources.GetObject("Coin2.Image")));
-            this.Coin2.Location = new System.Drawing.Point(1552, 414);
+            this.Coin2.Location = new System.Drawing.Point(1557, 414);
             this.Coin2.Margin = new System.Windows.Forms.Padding(0);
             this.Coin2.Name = "Coin2";
-            this.Coin2.Size = new System.Drawing.Size(80, 72);
+            this.Coin2.Size = new System.Drawing.Size(75, 75);
             this.Coin2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Coin2.TabIndex = 9;
             this.Coin2.TabStop = false;
+            // 
+            // Bomb
+            // 
+            this.Bomb.Cursor = System.Windows.Forms.Cursors.Default;
+            this.Bomb.Image = ((System.Drawing.Image)(resources.GetObject("Bomb.Image")));
+            this.Bomb.Location = new System.Drawing.Point(1767, 424);
+            this.Bomb.Margin = new System.Windows.Forms.Padding(0);
+            this.Bomb.Name = "Bomb";
+            this.Bomb.Size = new System.Drawing.Size(136, 131);
+            this.Bomb.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Bomb.TabIndex = 10;
+            this.Bomb.TabStop = false;
+            // 
+            // Pizza
+            // 
+            this.Pizza.Cursor = System.Windows.Forms.Cursors.Default;
+            this.Pizza.Image = ((System.Drawing.Image)(resources.GetObject("Pizza.Image")));
+            this.Pizza.Location = new System.Drawing.Point(1067, 292);
+            this.Pizza.Margin = new System.Windows.Forms.Padding(0);
+            this.Pizza.Name = "Pizza";
+            this.Pizza.Size = new System.Drawing.Size(100, 69);
+            this.Pizza.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Pizza.TabIndex = 11;
+            this.Pizza.TabStop = false;
             // 
             // JocPasareZburatoare
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Cyan;
-            this.ClientSize = new System.Drawing.Size(1729, 672);
+            this.ClientSize = new System.Drawing.Size(1924, 672);
+            this.Controls.Add(this.Pizza);
+            this.Controls.Add(this.Bomb);
             this.Controls.Add(this.Coin2);
             this.Controls.Add(this.Coin);
             this.Controls.Add(this.canalSus2);
@@ -190,6 +220,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.canalSus2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Coin)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Coin2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Bomb)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Pizza)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -207,6 +239,8 @@
         private System.Windows.Forms.PictureBox canalSus2;
         private System.Windows.Forms.PictureBox Coin;
         private System.Windows.Forms.PictureBox Coin2;
+        private System.Windows.Forms.PictureBox Bomb;
+        private System.Windows.Forms.PictureBox Pizza;
     }
 }
 
