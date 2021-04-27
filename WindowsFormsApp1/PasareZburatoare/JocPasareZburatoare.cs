@@ -17,7 +17,7 @@ namespace PasareZburatoare
         }
 
         int vitezaStangaDreapta = 8;
-        int vitezaSusJos = 16;
+        int vitezaSusJos = 10;
         int scor = 0;
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -87,13 +87,13 @@ namespace PasareZburatoare
         private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Space)
-                vitezaSusJos = -6;
+                vitezaSusJos = -10;
         }
 
         private void Form1_KeyUp(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Space)
-                vitezaSusJos = 6;
+                vitezaSusJos = 10;
             if (e.KeyCode == Keys.Right)
                 vitezaStangaDreapta += 5;
             if (e.KeyCode == Keys.Left)

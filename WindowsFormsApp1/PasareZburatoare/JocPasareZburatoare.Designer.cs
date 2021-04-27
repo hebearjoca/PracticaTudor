@@ -140,10 +140,10 @@
             this.Coin.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Coin.BackgroundImage")));
             this.Coin.Cursor = System.Windows.Forms.Cursors.Default;
             this.Coin.Image = ((System.Drawing.Image)(resources.GetObject("Coin.Image")));
-            this.Coin.Location = new System.Drawing.Point(1154, 121);
+            this.Coin.Location = new System.Drawing.Point(1147, 106);
             this.Coin.Margin = new System.Windows.Forms.Padding(0);
             this.Coin.Name = "Coin";
-            this.Coin.Size = new System.Drawing.Size(92, 62);
+            this.Coin.Size = new System.Drawing.Size(86, 81);
             this.Coin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Coin.TabIndex = 8;
             this.Coin.TabStop = false;
@@ -153,10 +153,10 @@
             this.Coin2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Coin2.BackgroundImage")));
             this.Coin2.Cursor = System.Windows.Forms.Cursors.Default;
             this.Coin2.Image = ((System.Drawing.Image)(resources.GetObject("Coin2.Image")));
-            this.Coin2.Location = new System.Drawing.Point(1546, 387);
+            this.Coin2.Location = new System.Drawing.Point(1552, 414);
             this.Coin2.Margin = new System.Windows.Forms.Padding(0);
             this.Coin2.Name = "Coin2";
-            this.Coin2.Size = new System.Drawing.Size(92, 62);
+            this.Coin2.Size = new System.Drawing.Size(80, 72);
             this.Coin2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Coin2.TabIndex = 9;
             this.Coin2.TabStop = false;
