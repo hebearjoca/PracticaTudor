@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{51035624-4060-4F02-9BC1-EFA358911326}</ProjectGuid>
+    <ProjectGuid>{4447C289-A425-465C-825B-57F837D0EE11}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Calculator1</RootNamespace>
-    <AssemblyName>Calculator1</AssemblyName>
+    <RootNamespace>XsiZero</RootNamespace>
+    <AssemblyName>XsiZero</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -44,16 +44,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FormGrupa1.cs">
+    <Compile Include="JocXsiO.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormGrupa1.Designer.cs">
-      <DependentUpon>FormGrupa1.cs</DependentUpon>
+    <Compile Include="JocXsiO.Designer.cs">
+      <DependentUpon>JocXsiO.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FormGrupa1.resx">
-      <DependentUpon>FormGrupa1.cs</DependentUpon>
+    <EmbeddedResource Include="JocXsiO.resx">
+      <DependentUpon>JocXsiO.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

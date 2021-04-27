@@ -18,95 +18,84 @@ namespace Calculator1
         }
 
         Double rezultat = 0;
-        string operatie;
-         
-        private void buttonZero_Click(object sender, EventArgs e)
+        string operatie="";
+        bool butonOperatieApasat = false;
+
+        private void EliminareZero()
         {
-            textBoxAfisare.Text += "0";
+            if (textBoxAfisare.Text == "0")
+                textBoxAfisare.Text = "";
         }
 
-        private void buttonUnu_Click(object sender, EventArgs e)
+        private void buttonCifra_Click(object sender, EventArgs e)
         {
-            textBoxAfisare.Text += "1";
+            EliminareZero();
+            if (butonOperatieApasat == true)
+                textBoxAfisare.Text = "";
+            butonOperatieApasat = false;
+            string cifra = ((Button)sender).Text;
+            textBoxAfisare.Text += cifra;
         }
-
-        private void buttonDoi_Click(object sender, EventArgs e)
-        {
-            textBoxAfisare.Text += "2";
-        }
-
-        private void buttonTrei_Click(object sender, EventArgs e)
-        {
-            textBoxAfisare.Text += "3";
-        }
-
-        private void buttonPatru_Click(object sender, EventArgs e)
-        {
-            textBoxAfisare.Text += "4";
-        }
-
-        private void buttonCinci_Click(object sender, EventArgs e)
-        {
-            textBoxAfisare.Text += "5";
-        }
-
-        private void buttonSase_Click(object sender, EventArgs e)
-        {
-            textBoxAfisare.Text += "6";
-        }
-
-        private void buttonSapte_Click(object sender, EventArgs e)
-        {
-            textBoxAfisare.Text += "7";
-        }
-
-        private void buttonOpt_Click(object sender, EventArgs e)
-        {
-            textBoxAfisare.Text += "8";
-        }
-
-        private void buttonNoua_Click(object sender, EventArgs e)
-        {
-            textBoxAfisare.Text += "9";
-        }
-
-        private void buttonStergeTot_Click(object sender, EventArgs e)
-        {
-            textBoxAfisare.Text = "";
-        }
-
+        
         private void buttonEgal_Click(object sender, EventArgs e)
         {
-             
-        }
-
-        private void buttonPlus_Click(object sender, EventArgs e)
-        {
-            rezultat = Double.Parse(textBoxAfisare.Text);
-            textBoxAfisare.Text += "+";
-        }
-
-        private void buttonMinus_Click(object sender, EventArgs e)
-        {
-            textBoxAfisare.Text += "-";
-        }
-
-        private void buttonInmultire_Click(object sender, EventArgs e)
-        {
-            textBoxAfisare.Text += "*";
-        }
-
-        private void buttonImpartire_Click(object sender, EventArgs e)
-        {
-            textBoxAfisare.Text += "/";
+            label1.Text +=" "+ textBoxAfisare.Text + " = ";
+            switch (operatie)
+            {
+                case "+":
+                    textBoxAfisare.Text = (rezultat + double.Parse(textBoxAfisare.Text)).ToString();
+                    rezultat = 0;
+                    break;
+                case "-":
+                    textBoxAfisare.Text = (rezultat - double.Parse(textBoxAfisare.Text)).ToString();
+                    rezultat = 0;
+                    break;
+                case "x":
+                    textBoxAfisare.Text = (rezultat * double.Parse(textBoxAfisare.Text)).ToString();
+                    rezultat = 0;
+                    break;
+                case "/":
+                    textBoxAfisare.Text = (rezultat / double.Parse(textBoxAfisare.Text)).ToString();
+                    rezultat = 0;
+                    break;
+            }
         }
 
         private void buttonStergeCaracter_Click(object sender, EventArgs e)
         {
             string textCurent = textBoxAfisare.Text;
-            if (textCurent.Length > 0)
-                textCurent = textCurent.Remove(textCurent.Length, 1);
-            textBoxAfisare.Text = textCurent;
+            if (textCurent.Length == 1)
+                textBoxAfisare.Text = "0";
+            else
+            {
+                if (textCurent.Length > 0)
+                    textCurent = textCurent.Remove(textCurent.Length - 1, 1);
+                textBoxAfisare.Text = textCurent;
+            }
+        }
+
+        private void buttonOperatie_Click(object sender, EventArgs e)
+        {
+            if (rezultat != 0)
+            {
+                buttonEgal.PerformClick();
+                operatie = ((Button)sender).Text;
+                label1.Text = rezultat.ToString() + " " + operatie;
+                butonOperatieApasat = true;
+            }
+
+            rezultat = double.Parse(textBoxAfisare.Text);
+            operatie = ((Button)sender).Text;
+            label1.Text = rezultat.ToString() + " " + operatie;
+            butonOperatieApasat = true;
+        }
+
+        private void buttonStergeTot_Click(object sender, EventArgs e)
+        {
+            textBoxAfisare.Text = "0";
+            label1.Text = "";
+            operatie = "";
+            rezultat = 0;
         }
     }
 }
